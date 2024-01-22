@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>hw3 - inputs</title>
+	</head>
+	<body>
+		<h3>Submit/reset</h3>
+		<form action="">
+			<label for="mail">Пошта</label><br />
+			<input type="email" id="mail" placeholder="E-mail" /><br />
+			<label for="pass">Пароль</label><br />
+			<input type="password" id="pass" placeholder="password" /><br />
+			<br />
+			<label for="birth">Дата народження </label>
+
+			<input type="date" id="birth" placeholder="birth date" /><br />
+			<br />
+			<input type="submit" />
+			<input type="reset" />
+			<hr />
+			<h3>Button/file</h3>
+			<label for="choose">Виберіть файл</label>
+			<input type="file" id="choose" /><br />
+			<label for="Send">Відправити</label>
+			<input
+				type="button"
+				id="Send"
+				onclick="alert('File sent')"
+				value="Send"
+			/><br />
+			<hr />
+			<h3>Image</h3>
+			<label for="download">Завантажити</label><br />
+			<input
+				id="download"
+				type="image"
+				src="./03/pngwing.com.png"
+				alt="Go"
+				width="50"
+				height="50"
+			/>
+			<hr />
+		</form>
+	</body>
+</html>
