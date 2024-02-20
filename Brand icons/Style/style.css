@@ -30,10 +30,10 @@ h1::after {
 	font-weight: 400;
 	color: #2d3640;
 }
-.title {
+/* .title {
 	width: 690px;
 	margin: 0 95px;
-}
+} */
 .title p {
 	text-align: left;
 	margin-top: 0;
@@ -57,7 +57,7 @@ p {
 .developer-card {
 	position: relative;
 	width: 1314px;
-	margin: 0 auto;
+	/* margin: 0 auto; */
 }
 .card {
 	display: inline-block;
