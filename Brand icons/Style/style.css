@@ -1,0 +1,211 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	font-family: "Catamaran", sans-serif;
+}
+.container {
+	width: 1920px;
+	height: 960px;
+	background-color: #00a1c60d;
+	padding: 110px;
+}
+
+.develop {
+	width: 1500px;
+	margin: 0px auto;
+}
+
+h1 {
+	font-family: "IBM Plex Sans", sans-serif;
+	font-size: 48px;
+	font-weight: 600;
+	line-height: 80px;
+	color: #2d3640;
+	margin-bottom: 0;
+}
+h1::after {
+	content: " On The Planet";
+	font-size: 48px;
+	font-weight: 400;
+	color: #2d3640;
+}
+.title {
+	width: 690px;
+	margin: 0 95px;
+}
+.title p {
+	text-align: left;
+	margin-top: 0;
+}
+h4 {
+	font-size: 20px;
+	font-weight: 700;
+	color: #2d3640;
+	text-align: center;
+	margin-bottom: 0px;
+}
+
+p {
+	font-size: 16px;
+	font-weight: 400;
+	color: #4b4f52;
+	text-align: center;
+	margin: 0px auto 30px;
+}
+
+.developer-card {
+	position: relative;
+	width: 1314px;
+	margin: 0 auto;
+}
+.card {
+	display: inline-block;
+	width: 295px;
+	height: 470px;
+	background-color: #ffffff;
+	border: 1px #eaedf2;
+	border-radius: 25px;
+}
+
+.esidoda {
+	position: absolute;
+	left: 337px;
+}
+
+.avatar > img {
+	width: 117px;
+	height: auto;
+}
+.alex {
+	position: absolute;
+	left: 680px;
+}
+.alex img {
+	width: 156px;
+	position: relative;
+	left: -12px;
+}
+.amanta {
+	float: right;
+}
+.amanta img {
+	width: 177px;
+	position: relative;
+	left: -28px;
+}
+.avatar {
+	width: 120px;
+	height: 120px;
+	margin: 56px auto;
+	border: 1px solid #eff3f8;
+	border-radius: 80px;
+	overflow: hidden;
+}
+.dan-icon {
+	width: 50px;
+	height: 50px;
+	background-color: #41b883;
+	margin: 0 auto;
+	border-radius: 50px;
+	overflow: hidden;
+	position: relative;
+}
+
+.dan-icon img {
+	display: inline-block;
+	width: 30px;
+	height: auto;
+	position: absolute;
+	top: 12px;
+	left: 9px;
+}
+
+.icon {
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	border-radius: 50px;
+	position: relative;
+}
+.angular {
+	background-color: #34474f;
+	margin-left: 55px;
+}
+.angular img {
+	display: inline-block;
+	width: 30px;
+	position: absolute;
+	top: 8px;
+	left: 10px;
+}
+.flutter {
+	background-color: #202124;
+	overflow: hidden;
+	margin: 0 12px;
+}
+.flutter img {
+	display: inline-block;
+	width: 30px;
+	position: absolute;
+	top: 8px;
+	left: 10px;
+}
+
+.react {
+	background-color: #61dafb;
+}
+.react img {
+	display: inline-block;
+	width: 30px;
+	position: absolute;
+	top: 8px;
+	left: 10px;
+}
+
+.java {
+	background-color: #d63033;
+	margin-left: 80px;
+}
+.java img {
+	display: inline-block;
+	width: 30px;
+	position: absolute;
+	top: 3px;
+	left: 10px;
+}
+
+.react-native {
+	background-color: #0aa9d7;
+	margin-left: 10px;
+}
+.react-native img {
+	display: inline-block;
+	width: 30px;
+	position: absolute;
+	top: 8px;
+	left: 10px;
+}
+.html {
+	background-color: #e44e25;
+	margin-left: 80px;
+}
+.html img {
+	display: inline-block;
+	width: 25px;
+	position: absolute;
+	top: 8px;
+	left: 12px;
+}
+
+.css {
+	background-color: #1073bb;
+	margin-left: 10px;
+}
+.css img {
+	display: inline-block;
+	width: 25px;
+	position: absolute;
+	top: 8px;
+	left: 12px;
+}
