@@ -5,10 +5,11 @@ body {
 	font-family: "Catamaran", sans-serif;
 }
 .container {
-	width: 1920px;
-	height: 960px;
+	max-width: 1920px;
+
 	background-color: #00a1c60d;
 	padding: 110px;
+	margin: 0 auto;
 }
 
 .develop {
@@ -55,7 +56,6 @@ p {
 }
 
 .developer-card {
-	position: relative;
 	width: 1314px;
 	/* margin: 0 auto; */
 }
