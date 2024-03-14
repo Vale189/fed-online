@@ -34,8 +34,8 @@ alert(checkAge == true);
 // Використовуйте математичні операції для обчислення вартості товару (ціна * кількість).
 // Виведіть результат за допомогою console.log.
 
-let Price = 10;
-let Value = 3;
+let Price = Number(prompt("Product price"));
+let Value = Number(prompt("How many?"));
 
 console.log(`Total value is ${Price * Value}`);
 
