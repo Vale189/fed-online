@@ -323,4 +323,7 @@ img {
 		padding: 10px 0;
 		font-size: 20px;
 	}
+	.poster {
+		margin-bottom: 5px;
+	}
 }
