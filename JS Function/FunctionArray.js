@@ -58,12 +58,12 @@ function hiUser(userName) {
 	console.log(`hi ${userName}`);
 }
 
-function welcomeUser() {
+function welcomeUser(callbackFn) {
 	for (i = 0; i < user.length; i++) {
-		console.log(hiUser(user[i]));
+		console.log(callbackFn(user[i]));
 	}
 }
-welcomeUser();
+welcomeUser(hiUser);
 
 // 3. Стрілкові функції:
 
@@ -94,10 +94,10 @@ function accept(value) {
 	console.log(`welcome, ${value}`);
 }
 
-function call(value, callBack) {
-	console.log(accept(value));
+function call(callBack) {
+	console.log(callBack("Admin"));
 }
-call(admin, accept);
+call(accept);
 
 // 6. Перепишіть стрілкову функцію в звичайну
 
