@@ -2,6 +2,19 @@
 	box-sizing: border-box;
 }
 
+:root {
+	--fontColor: #776677;
+	--bgColor: #386e41;
+	--mainFont: Avenir Roman;
+	--fontSize: 18px;
+	--fontSecondColor: #fff;
+}
+@font-face {
+	font-family: "Avenir Roman";
+	font-style: normal;
+	font-weight: normal;
+	src: local("Avenir Roman"), url("avenir_roman_12.woff") format("woff");
+}
 @font-face {
 	font-family: "Avenir Book";
 	src: url("Avenir-Book.eot");
@@ -27,8 +40,8 @@
 
 body,
 html {
-	font-family: Open Sans, sans-serif;
-	font-size: 18px;
+	font-family: var(--mainFont), sans-serif;
+	font-size: var(--fontSize);
 }
 
 /* header */
@@ -47,6 +60,7 @@ html {
 }
 
 .logo a {
+	font-family: Open Sans, sans-serif;
 	font-size: 1rem;
 	font-weight: 700;
 	line-height: 24.51px;
@@ -55,28 +69,28 @@ html {
 }
 
 nav {
-	width: 35%;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 }
 
 nav a {
-	color: #776677;
+	color: var(--fontColor);
 	font-weight: 400;
+	padding: 1rem;
 }
 nav a:hover {
 	color: #bc436a;
 	font-weight: 800;
 }
 nav button {
-	width: 120px;
+	min-width: 120px;
 	height: 40px;
 	border-radius: 4px;
-	background-color: #386e41;
+	background-color: var(--bgColor);
 	padding: 0.5em;
 	border: none;
-	color: #fff;
+	color: var(--fontSecondColor);
 	font-size: 1rem;
 }
 nav button:hover {
@@ -119,9 +133,8 @@ h1 span {
 }
 .text p {
 	width: 50%;
-	color: #7a7a7a;
+	color: var(--fontColor);
 
-	font-size: 1.3rem;
 	font-weight: 400;
 	line-height: 2rem;
 	text-align: left;
@@ -132,7 +145,7 @@ h1 span {
 	display: inline-block;
 	width: 120px;
 	height: 120px;
-	border: 10px solid #386e41;
+	border: 10px solid var(--bgColor);
 	position: absolute;
 	top: 725px;
 	left: -35px;
@@ -150,14 +163,14 @@ h1 span {
 }
 
 .direction i {
-	color: #7a7a7a;
+	color: var(--fontColor);
 	margin-left: 3em;
 }
 
 .search {
 	width: 85%;
 	border-radius: 8px;
-	background-color: #386e41;
+	background-color: var(--bgColor);
 	display: flex;
 	justify-content: space-around;
 	margin: 2em 0 0;
@@ -176,7 +189,7 @@ h1 span {
 input {
 	background-color: transparent;
 	border: none;
-	color: #fff;
+	color: var(--fontSecondColor);
 	font-size: 1em;
 	padding: 0 1em;
 	width: 100%;
@@ -187,16 +200,16 @@ input:focus {
 }
 
 .block p {
-	color: #fff;
+	color: var(--fontSecondColor);
 }
 .block i {
-	color: #fff;
+	color: var(--fontSecondColor);
 }
 
 .line {
 	width: 85%;
 	height: 1px;
-	background-color: #fff;
+	background-color: var(--fontSecondColor);
 	align-self: center;
 }
 
@@ -207,7 +220,7 @@ input:focus {
 	width: 145px;
 	height: 40px;
 	background-color: #bc436a;
-	color: #fff;
+	color: var(--fontSecondColor);
 	border-radius: 4px;
 	align-self: center;
 	border: none;
@@ -228,12 +241,12 @@ input:focus {
 	font-size: 1em;
 	font-weight: 400;
 	line-height: 1.2em;
-	color: #767676;
+	color: var(--fontColor);
 }
 
 .destination i {
 	padding: 1em 3em;
-	color: #767676;
+	color: var(--fontColor);
 }
 
 /* Планшет */
@@ -301,7 +314,10 @@ input:focus {
 		padding: 1em 0;
 	}
 	nav a {
-		margin: 1em 0;
+		padding: 1rem 0;
+	}
+	nav button {
+		margin: 2rem;
 	}
 
 	.main-section {
