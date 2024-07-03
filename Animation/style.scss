@@ -1,0 +1,263 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #100e0e;
+}
+
+.animation {
+	display: grid;
+	grid-template-columns: repeat(3, auto);
+	width: 80%;
+	margin: 0 auto;
+	padding: 100px;
+	gap: 6rem;
+}
+
+button {
+	width: 12rem;
+	height: 5rem;
+	border: 2px solid #0f89fa;
+	color: #0f89fa;
+	background-color: transparent;
+	text-align: center;
+	padding: 16px 32px;
+	font-family: "Roboto", sans-serif;
+	font-weight: 400;
+	font-size: 18px;
+	transition: all 300ms ease-in;
+	cursor: pointer;
+}
+
+.fill:hover {
+	box-shadow: inset 0 0 0 5rem #0f89fa;
+	color: #fff;
+}
+.glowing:hover {
+	box-shadow: 0px 0px 8px 4px #0f89fa;
+}
+
+.hoverme {
+	width: 7rem;
+	transition: all 300ms ease-out;
+	background-color: #0f89fa;
+
+	button span {
+		color: #fff;
+	}
+	button:hover {
+		color: #fff;
+	}
+	&:hover {
+		width: 12rem;
+		background-color: #0f89fa;
+	}
+}
+
+.explore {
+	svg {
+		display: none;
+		width: 1rem;
+	}
+	&:hover {
+		width: 14rem;
+		background-color: #0f89fa;
+		color: #fff;
+		display: inline-flex;
+		align-items: center;
+	}
+	&:hover svg {
+		display: block;
+		fill: #fff;
+		margin-left: 2rem;
+	}
+}
+
+.slide {
+	transition: all 300ms ease-in;
+	width: 0.5rem;
+	&:hover {
+		width: 12rem;
+
+		background-color: #0f89fa;
+	}
+	&:hover button {
+		color: #fff;
+	}
+}
+
+.raise:hover {
+	transform: translateY(-10px);
+	box-shadow: -2px 10px 8px -2px #0f89fa;
+}
+
+.hover {
+	width: 5rem;
+	height: 5rem;
+	border-radius: 5rem;
+	background-color: #0f89fa;
+	transition: all 300ms ease-out;
+	button {
+		border: none;
+	}
+	button span {
+		color: #fff;
+	}
+	&:hover {
+		width: 12rem;
+		border-radius: 20px;
+		button {
+			color: #fff;
+		}
+	}
+}
+
+// .fancy::after {
+// 	display: block;
+// 	content: "";
+// 	width: 11rem;
+// 	height: 1px;
+// 	background-color: #0f89fa;
+// 	position: relative;
+// 	top: 32px;
+// 	right: 25px;
+// }
+
+.fancy-button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid #0f89fa;
+	width: 12rem;
+
+	button {
+		width: 11.5rem;
+		height: 5.5rem;
+		position: absolute;
+		transition: all 1s ease-out;
+		&:hover {
+			border: none;
+		}
+	}
+}
+
+.fill-up {
+	width: 12rem;
+	height: 1rem;
+	transition: height 300ms ease-out;
+	&:hover {
+		background-color: #0f89fa;
+		color: #fff;
+		height: 5rem;
+	}
+	button:hover {
+		color: #fff;
+	}
+}
+
+.close {
+	display: flex;
+	width: 12rem;
+	border: 1px solid #0f89fa;
+	justify-content: space-between;
+	.close-left,
+	.close-right {
+		transition: width 300ms ease-out;
+	}
+	&:hover .close-left {
+		width: 50%;
+		background-color: #0f89fa;
+	}
+	button {
+		position: absolute;
+		&:hover {
+			color: #fff;
+		}
+	}
+	&:hover .close-right {
+		width: 50%;
+		background-color: #0f89fa;
+	}
+	.close-left {
+		width: 10%;
+	}
+	.close-right {
+		width: 10%;
+	}
+	button {
+		border: none;
+	}
+}
+
+.notify {
+	background-color: #0f89fa;
+	color: black;
+
+	transition: all 300ms ease-in-out;
+
+	&:hover span {
+		display: none;
+	}
+	&:hover::before {
+		content: "Thanks";
+	}
+}
+
+.explore-more {
+	position: relative;
+	color: #fff;
+	box-shadow: inset 0 0 0 transparent;
+	transition: box-shadow 100ms ease-out;
+
+	p {
+		position: absolute;
+		z-index: 1;
+		bottom: 7px;
+	}
+	.fa-right-from-bracket {
+		position: absolute;
+		scale: 1.2;
+		top: 32px;
+		right: 9px;
+		transform: none;
+		transition: all 300ms ease-out;
+	}
+	.fa-left-long {
+		position: absolute;
+		scale: 1.2;
+		right: 94px;
+		bottom: 30px;
+		transform: none;
+		transition: all 300ms ease-out;
+	}
+	&:hover {
+		box-shadow: inset 6rem 0 0 0 #0f89fa, inset 0 0 0 6rem #51b851;
+		.fa-left-long {
+			transform: translateX(4.5rem) rotateY(180deg);
+		}
+		.fa-right-from-bracket {
+			transform: translateX(-4.5rem) rotateY(180deg);
+		}
+	}
+}
+
+.offset {
+	border: 4px solid #0f89fa;
+	box-shadow: 4px 4px #0f89fa, -4px -4px #0f89fa;
+
+	&:hover {
+		// background-color: #0f89fa;
+		color: #fff;
+		box-shadow: inset 12rem 5rem #0f89fa;
+		translate: -5px -5px;
+	}
+}
+
+.zoom {
+	width: 10rem;
+	height: 4rem;
+	&:hover {
+		scale: 1.2 1.2;
+	}
+}
